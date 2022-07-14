@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import "bulma"  
+import Header from "./components/Header";
+import Banking from "./components/Banking";
+import Balance from "./components/Balance";
 import './App.css';
+import AccountType from "./components/AccountType";
+import LogIn from "./components/Login";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bodyme">
+     <Header/>
+     <Balance/>
+     <Banking/>
+      <AccountType/>
+      <LogIn/>
+     
     </div>
   );
 }
